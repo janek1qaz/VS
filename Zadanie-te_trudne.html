@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Liczby całkowite z zakresu</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+    function x()
+    {
+        document.getElementById('wynik').innerHTML = "";
+		while(x==0||isNaN(x))    //Jeżeli podana L1 liczba jest równa zero albo nie jest liczbą lub jest pusta prompt uruchamia się w pętli
+     {
+       var x=parseInt(prompt("Podaj liczbę początkową"))
+        var y=parseInt(prompt("Podaj liczbę końcową"))
+     }
+        
+        if (x<=y){
+			var z=0;
+            for (var i=x;i<=y;i++){
+				z=z+x;
+                x++;
+			}
+			document.getElementById('wynik').innerHTML += z;
+        }
+    }
+</script>
+<section>
+    <input type=button onClick="x()" value="Podaj">
+    <output id="wynik"></output>
+</section>
+</body>
+</html>
