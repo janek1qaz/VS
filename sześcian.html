@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+function licz(formularz)
+		{
+			if (formularz.a.value=='') alert ('Wprowadź dane'); else
+			{
+				a=formularz.a.value;
+				a=formularz.a.value;
+				formularz.p.value=a*a*a;
+				formularz.o.value=12*a;
+			}
+		}
+	</script>
+	<form name="form1" action="post">
+		Podaj bok <input type="text" name="a"><br><br>
+		<input type="button" value="Oblicz" onClick="licz(this.form)" class="w3-button w3-black w3-padding-small"><br><br>
+		Pole  <input type="text" name="p"><br><br>
+		Obwód  <input type="text" name="o">
+	</form>
+
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
