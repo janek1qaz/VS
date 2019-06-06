@@ -1,0 +1,59 @@
+#container{
+width:900px;
+height:1000px;
+
+}
+#footer{
+width:806px;
+height:90px;
+border:medium solid black;
+color:white;
+display: none;
+}
+.but{
+margin: 50px ;
+}
+#gracz1{
+width:35%;
+height:35%;
+float:left;
+border:medium solid black;
+}
+#gracz2{
+width:35%;
+height:35%;
+float:left;
+border:medium solid black;
+}
+#rzut1{
+
+width:35%;
+height:30%;
+float:left;
+border:medium solid black;
+
+}
+#rzut2{
+	
+width:35%;
+height:30%;
+float:left;
+border:medium solid black;
+align-content: center;
+}
+#wynik1{
+width:35%;
+height:10%;
+float:left;
+border:medium solid black;
+}
+#wynik2{
+width:35%;
+height:10%;
+float:left;
+border:medium solid black;
+}
+img{
+	height:150px;
+	width:150px;
+}
