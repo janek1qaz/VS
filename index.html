@@ -1,0 +1,108 @@
+<html>
+<head>
+<script>
+
+
+function wyw (){
+
+var a = document.getElementById("sel").value;
+var b = document.getElementById("film");
+b.innerHTML+=a+', ';
+if(a=="komedia"){
+b.innerHTML="<ol><li></li>Kubuś puchatek<li></li></ol>"}
+else if(a=="dramat"){
+b.innerHTML='<ol><li>"Jaś Fasola"</li></ol>'
+
+}
+
+
+};
+document.write(' '
+
+);
+
+</script>
+<style>
+header{
+float:left;
+width:25%;
+height:200px;
+}
+#header{
+background-color: #790DB5;
+font-size: 34px;
+color: orange;
+height:200px;
+text-align:center;
+}
+#left{
+float: left;
+width:50%;
+background-color:#FFE6A3;
+height: 500px;
+}
+#right {
+float: left;
+width:50%;
+background-color:#FFE6A3;
+height: 500px;
+}
+footer{
+clear:both;
+background-color: #790DB5;
+height:200px;
+text-align:center;
+padding-top:0px;
+color: orange;
+}
+body{
+margin:0px;
+padding:0px;
+}
+a:visited{
+color:orange !important;
+}
+a:link{
+
+}
+a{
+color:yellow;
+}
+
+</style>
+</head>
+<body>
+<div id="header">
+<header><img src="klaps.png" style=" height:200px;"></header>
+<header><p><strong>wybrane filmy:</strong></p></header>
+<header style="text-align:center; padding-top:0px;">
+<form action="roll.php" method="POST">
+<select id="sel" name="gatunek">
+<option value="Sci-Fi">Sci-Fi</option>
+<option value="animacja">animacja</option>
+<option value="dramat">dramat</option>
+<option value="horror">horror</option>
+<option value="komedia">komedia</option>
+
+</select>
+<input  type="submit" value="komediowy" onclick="wyw()"></input>
+</form>
+</header>
+<header><img src="gwiezdneWojny.jpg" style="height:200px;" alt="szturmowcy"></header>
+
+</div>
+<div id="left">
+<p><h2><strong>wybrane filmy:</strong></h2></p>
+
+</div>
+<div id="right">
+<p><h2><strong>wybrane filmy:</strong></h2></p>
+<p id="film"></>
+</div>
+<footer><br/><br/><br/><br/>
+<p>Autor:012345678</p><br/>
+<a href="kwerendy.txt" target="_blank">Zapraszam do bazy</a> <a href="" target="_blank">Przejdź do filmy.pl</a>
+</footer>
+</body>
+
+</html>
