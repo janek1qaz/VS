@@ -1,0 +1,8 @@
+<?php
+$host="localhost";
+$login="root";
+$baza="filmoteka";
+$tgatunki="gatunki";
+$t="ksiazki";
+$moj_adres="admin@timpex.pl"
+?>
